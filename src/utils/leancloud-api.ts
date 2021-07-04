@@ -196,9 +196,8 @@ export class LeanCloudComments implements LeanCloudCommentsInterface {
     this.configs.leanCloudConfig.admin = admin
     this.configs.leanCloudConfig.lang = lang
 
-    this.configs.gravatarConfig.params = `?d=${
-      ds.indexOf(avatar) > -1 ? avatar : 'mp'
-    }&v=${VERSION}`
+    this.configs.gravatarConfig.params = `?d=${ds.indexOf(avatar) > -1 ? avatar : 'mp'
+      }&v=${VERSION}`
 
     const gravatarCDNs: { [key: string]: any } = {
       en: 'https://www.gravatar.com/avatar',
@@ -210,8 +209,8 @@ export class LeanCloudComments implements LeanCloudCommentsInterface {
     this.configs.gravatarConfig.cdn = /^https?:\/\//.test(avatarCDN)
       ? avatarCDN
       : gravatarCDNs[String(this.configs.leanCloudConfig.lang)]
-      ? gravatarCDNs[String(this.configs.leanCloudConfig.lang)]
-      : gravatarCDNs['en']
+        ? gravatarCDNs[String(this.configs.leanCloudConfig.lang)]
+        : gravatarCDNs['en']
 
     this.configs.gravatarConfig.url =
       this.configs.gravatarConfig.cdn + this.configs.gravatarConfig.params
@@ -271,8 +270,8 @@ export class LeanCloudComments implements LeanCloudCommentsInterface {
     const mail = comment._serverData.mail
     const avatar = String(mail).endsWith('@qq.com')
       ? 'https://q4.qlogo.cn/g?b=qq&nk=' +
-        mail.replace('@qq.com', '') +
-        '&s=100'
+      mail.replace('@qq.com', '') +
+      '&s=100'
       : this.configs.gravatarConfig.url + '&' + md5(comment._serverData.mail)
     const admin = this.configs.leanCloudConfig.admin
 
@@ -335,7 +334,7 @@ export class LeanCloudComment {
 
       // Skip filters if it's cache data.
       if (!cachedData) {
-        const language = lang === 'en' || lang === 'cn' ? lang : 'en'
+        const language = lang === 'en' || lang === 'vi' ? lang : 'en'
         this.filterBody()
         this.transformTime(language)
       }
@@ -355,10 +354,10 @@ export class LeanCloudComment {
    *
    * eg. `10 minutes ago.`
    */
-  transformTime(lang: 'en' | 'cn'): void {
+  transformTime(lang: 'en' | 'vi'): void {
     const templates = {
       en: 'commented [TIME]',
-      cn: '[TIME]评论了'
+      vi: 'Đăng lúc'
     }
 
     this.created_at = formatTime(this.created_at, {

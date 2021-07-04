@@ -28,7 +28,6 @@
             py-0.5
             rounded-md
             relative
-            uppercase
             cursor-pointer
           "
           @click="pushPage(route.path)"
@@ -37,38 +36,29 @@
         >
           <span
             class="relative z-50"
-            v-if="$i18n.locale === 'cn' && route.i18n.cn"
+            v-if="$i18n.locale == 'vi' && route.i18n.vi"
           >
-            {{ route.i18n.cn }}
+            {{ route.i18n.vi }}
           </span>
           <span
             class="relative z-50"
-            v-else-if="$i18n.locale === 'en' && route.i18n.en"
+            v-else-if="$i18n.locale == 'en' && route.i18n.en"
           >
             {{ route.i18n.en }}
           </span>
-          <span class="relative z-50" v-else>{{ route.name }}</span>
+          <span class="relative z-50" v-else>{{ route.i18n }}</span>
         </div>
         <Dropdown
           @command="pushPage"
           hover
           v-else
-          class="
-            nav-link
-            text-sm
-            block
-            px-1.5
-            py-0.5
-            rounded-md
-            relative
-            uppercase
-          "
+          class="nav-link text-sm block px-1.5 py-0.5 rounded-md relative"
         >
           <span
             class="relative z-50"
-            v-if="$i18n.locale === 'cn' && route.i18n.cn"
+            v-if="$i18n.locale === 'vi' && route.i18n.vi"
           >
-            {{ route.i18n.cn }}
+            {{ route.i18n.vi }}
           </span>
           <span
             class="relative z-50"
@@ -85,9 +75,9 @@
             >
               <span
                 class="relative z-50"
-                v-if="$i18n.locale === 'cn' && sub.i18n.cn"
+                v-if="$i18n.locale === 'vi' && sub.i18n.vi"
               >
-                {{ sub.i18n.cn }}
+                {{ sub.i18n.vi }}
               </span>
               <span
                 class="relative z-50"

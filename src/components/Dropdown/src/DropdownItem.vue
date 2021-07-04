@@ -1,6 +1,6 @@
 <template>
   <div
-    @click.stop.prevent="handleClick"
+    @click="handleClick"
     class="
       block
       cursor-pointer

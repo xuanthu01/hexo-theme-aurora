@@ -74,7 +74,7 @@ export class ThemeMenu implements ObMenu {
       name: 'Home',
       path: '/',
       i18n: {
-        cn: '首页',
+        vi: 'Trang Chủ',
         en: 'Home'
       }
     })
@@ -91,7 +91,7 @@ export class ThemeMenu implements ObMenu {
         name: 'About',
         path: '/about',
         i18n: {
-          cn: '关于',
+          vi: 'Về Tôi',
           en: 'About'
         }
       },
@@ -99,7 +99,7 @@ export class ThemeMenu implements ObMenu {
         name: 'Archives',
         path: '/archives',
         i18n: {
-          cn: '归档',
+          vi: 'Kho Lưu Trữ',
           en: 'Archives'
         }
       },
@@ -107,7 +107,7 @@ export class ThemeMenu implements ObMenu {
         name: 'Tags',
         path: '/tags',
         i18n: {
-          cn: '标签',
+          vi: 'Thẻ',
           en: 'Tags'
         }
       }
@@ -154,8 +154,8 @@ export class Menu {
     this.i18n = menu.i18n ? menu.i18n : {}
     this.children = menu.children
       ? Object.keys(menu.children).map(
-          (key: string) => new Menu(menu.children[key])
-        )
+        (key: string) => new Menu(menu.children[key])
+      )
       : []
   }
 }
@@ -401,9 +401,9 @@ export class SiteMeta {
     locale: string
     prismjs: string[]
   } = {
-    locale: 'en',
-    prismjs: []
-  }
+      locale: 'en',
+      prismjs: []
+    }
   favicon = ''
 
   /**

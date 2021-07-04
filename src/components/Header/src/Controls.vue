@@ -14,12 +14,12 @@
     <Dropdown v-if="enableMultiLanguage" @command="handleClick">
       <span class="ob-drop-shadow" data-dia="language">
         <svg-icon icon-class="globe" />
-        <span v-if="$i18n.locale == 'cn'">中文</span>
+        <span v-if="$i18n.locale == 'vi'">VI</span>
         <span v-if="$i18n.locale == 'en'">EN</span>
       </span>
       <DropdownMenu>
+        <DropdownItem name="vi">Tiếng Việt</DropdownItem>
         <DropdownItem name="en">English</DropdownItem>
-        <DropdownItem name="cn">中文</DropdownItem>
       </DropdownMenu>
     </Dropdown>
     <span no-hover-effect class="ob-drop-shadow" data-dia="light-switch">

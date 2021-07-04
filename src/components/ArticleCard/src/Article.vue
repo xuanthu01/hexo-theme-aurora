@@ -73,7 +73,8 @@
                 class="
                   text-ob-normal
                   pr-1.5
-                  hover:text-ob hover:opacity-50
+                  hover:text-ob
+                  hover:opacity-50
                   cursor-pointer
                 "
                 @click="handleAuthorClick(post.author.link)"

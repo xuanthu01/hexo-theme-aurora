@@ -1,27 +1,27 @@
 {
   "menu": {
-    "home": "Home",
-    "about": "About",
-    "archives": "Archives",
-    "categories": "Categories",
-    "tags": "Tags",
-    "post": "Article",
-    "search": "Search results",
+    "home": "Trang chủ",
+    "about": "Về Tôi",
+    "archives": "Lưu Trữ",
+    "categories": "Thể Loại",
+    "tags": "Thẻ",
+    "post": "Bài đăng",
+    "search": "Kết quả tìm kiếm",
     "message-board": "Message Board",
     "not-found": "Page not found"
   },
   "home": {
-    "recommended": "Feature Articles",
-    "selection": "Editor's selection"
+    "recommended": "Nổi Bật",
+    "selection": "Được lựa chọn"
   },
   "titles": {
-    "articles": "Articles",
-    "about": "About Me",
+    "articles": "Bài Viết",
+    "about": "Về tôi",
     "category_list": "Categories",
     "tag_list": "Tags",
-    "toc": "Table of Content",
-    "comment": "Comments",
-    "recent_comment": "Recent Comments"
+    "toc": "Mục lục",
+    "comment": "Bình luận",
+    "recent_comment": "Bình luận gần đây"
   },
   "settings": {
     "months": [
@@ -38,22 +38,22 @@
       "Nov",
       "Dec"
     ],
-    "articles": "Articles",
-    "categories": "Categories",
-    "tags": "Tags",
-    "words": "Words",
+    "articles": "Bài Viết",
+    "categories": "Thể Loại",
+    "tags": "Thẻ",
+    "words": "Từ",
     "visitor_count": "Total visitor count",
     "visit_count": "Total visit count",
     "button-all": "All",
     "paginator": {
-      "newer": "Newer",
-      "older": "Older",
-      "prev": "Previous",
-      "next": "Next"
+      "newer": "Mới",
+      "older": "Cũ",
+      "prev": "Bài Trước",
+      "next": "Bài kế tiếp"
     },
-    "more-tags": "View more",
+    "more-tags": "Xem thêm",
     "admin-user": "Owner",
-    "shared-on": "shared on",
+    "shared-on": "Đăng lúc",
     "recently-search": "Recently searched",
     "search-result": "Found [total] records",
     "no-recent-search": "No recent searches.",
@@ -64,12 +64,12 @@
     "searched-by": "Search by",
     "tips-back-to-top": "Back to top",
     "tips-open-menu": "Open menu",
-    "tips-back-to-home": "Back to home",
-    "tips-open-search": "Open search",
-    "default-category": "Article",
+    "tips-back-to-home": "Trở về trang chủ",
+    "tips-open-search": "Mở tìm kiếm",
+    "default-category": "Không phân loại",
     "default-tag": "unsorted",
-    "empty-tag": "Current no tags were found.",
-    "pinned": "Pinned",
-    "featured": "Featured"
+    "empty-tag": "Không tìm thấy thẻ.",
+    "pinned": "Đã pin",
+    "featured": "Nổi bật"
   }
 }
